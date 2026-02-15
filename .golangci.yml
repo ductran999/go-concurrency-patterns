@@ -42,7 +42,10 @@ linters:
     - nlreturn
     - varnamelen
     - revive
-
+    - wsl_v5
+    - noinlineerr
+    - godoclint
+    
   settings:
     depguard:
       rules:
