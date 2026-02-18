@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/DucTran999/go-concurrency-patterns/case_study/garp"
+	"go-concurrency-patterns/case_study/garp"
 )
 
 // initRouter initializes the router with IPs, broadcast, and listen channels.

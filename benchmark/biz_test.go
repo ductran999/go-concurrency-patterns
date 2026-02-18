@@ -3,7 +3,7 @@ package benchmark_test
 import (
 	"testing"
 
-	"github.com/DucTran999/go-concurrency-patterns/benchmark"
+	"go-concurrency-patterns/benchmark"
 )
 
 func BenchmarkGreeting(b *testing.B) {

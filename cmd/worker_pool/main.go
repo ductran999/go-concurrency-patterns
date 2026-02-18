@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/DucTran999/go-concurrency-patterns/test/testutil"
-	workerpool "github.com/DucTran999/go-concurrency-patterns/worker-pool"
+	"go-concurrency-patterns/test/testutil"
+	workerpool "go-concurrency-patterns/worker-pool"
 )
 
 func main() {

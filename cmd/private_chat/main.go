@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	privatechat "github.com/DucTran999/go-concurrency-patterns/case_study/private_chat"
+	privatechat "go-concurrency-patterns/case_study/private_chat"
 )
 
 func main() {

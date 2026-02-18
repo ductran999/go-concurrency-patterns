@@ -3,7 +3,8 @@ package garp_test
 import (
 	"testing"
 
-	"github.com/DucTran999/go-concurrency-patterns/case_study/garp"
+	"go-concurrency-patterns/case_study/garp"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
