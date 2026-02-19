@@ -1,10 +1,11 @@
 module go-concurrency-patterns
 
-go 1.23.1
+go 1.24.0
 
 require (
 	github.com/DucTran999/shared-pkg v0.0.0-20250701065240-034489fcce32
 	github.com/stretchr/testify v1.10.0
+	gonum.org/v1/gonum v0.17.0
 )
 
 require (
