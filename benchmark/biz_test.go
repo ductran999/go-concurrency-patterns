@@ -7,7 +7,7 @@ import (
 )
 
 func BenchmarkGreeting(b *testing.B) {
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		benchmark.Greeting()
 	}
 }

@@ -45,6 +45,7 @@ linters:
     - wsl_v5
     - noinlineerr
     - godoclint
+    - forbidigo
     
   settings:
     depguard:
