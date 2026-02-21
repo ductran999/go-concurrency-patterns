@@ -46,7 +46,8 @@ linters:
     - noinlineerr
     - godoclint
     - forbidigo
-    
+    - gosec
+
   settings:
     depguard:
       rules:

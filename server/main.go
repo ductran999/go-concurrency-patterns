@@ -17,7 +17,7 @@ func sleep(sleepTime int) {
 func hello(w http.ResponseWriter, r *http.Request) {
 	sleep(5)
 	sleep(10)
-	io.WriteString(w, "Memory Management Test")
+	_, _ = io.WriteString(w, "Memory Management Test")
 }
 
 func main() {
