@@ -25,8 +25,11 @@ func main() {
 		go func(workerID int) {
 			defer wg.Done()
 
-			buf := bufferPool.Get().(*bytes.Buffer)
-
+			buf, ok := bufferPool.Get().(*bytes.Buffer)
+			if !ok {
+				log.Panic("invalid type")
+				return
+			}
 			defer func() {
 				buf.Reset()
 				bufferPool.Put(buf)

@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"log"
 	"testing"
 )
 
@@ -25,7 +26,11 @@ func BenchmarkWithPool(b *testing.B) {
 
 	b.RunParallel(func(pb *testing.PB) {
 		for pb.Next() {
-			buf := bufferPool.Get().(*bytes.Buffer)
+			buf, ok := bufferPool.Get().(*bytes.Buffer)
+			if !ok {
+				log.Panic("invalid type")
+				return
+			}
 
 			fmt.Fprintf(buf, "processing data for worker id: %d", 12345)
 
